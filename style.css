@@ -36,7 +36,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2 rem 4 rem;
+    /*padding: 2 rem 4 rem;*/
 }
 
 main h1 {
@@ -123,12 +123,12 @@ main form input[type="submit"]:hover {
     outline: #BE95C4;
 }*/
 
-section.images {
+/*section.imagens {
     padding: 4 rem;
     width: 50vw;
-}
+}*/
 
-section.images .circulo {
+section.imagens .circulo {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -137,4 +137,22 @@ section.images .circulo {
     background: linear-gradient(45deg, #443fa7, #E0B1CB);
     clip-path: circle(40% at right 80%);
     z-index: -1; /* sobrepor, por baixo, um elemento. só serve se tiver position */
+}
+
+/* responsividade*/
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.imagens .circulo {
+        clip-path: circle(35% at right 80%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.imagens {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
 }
