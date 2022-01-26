@@ -26,7 +26,7 @@ body {
     min-width: 100vw;
 }
 
-main#principal {
+/*main#principal {
     /*box-shadow: 5px 5px 5px #9F86C0;*/
 }
 
@@ -123,10 +123,10 @@ main form input[type="submit"]:hover {
     outline: #BE95C4;
 }*/
 
-/*section.imagens {
+section.imagens {
     padding: 4 rem;
     width: 50vw;
-}*/
+}
 
 section.imagens .circulo {
     position: absolute;
